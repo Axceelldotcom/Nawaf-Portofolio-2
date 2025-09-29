@@ -1,0 +1,19 @@
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8fafc;
+    color: #1a202c;
+}
+
+.text-highlight {
+    color: #3b82f6;
+}
+
+.bg-highlight {
+    background-color: #3b82f6;
+}
+
+.border-highlight {
+    border-color: #3b82f6;
+}
