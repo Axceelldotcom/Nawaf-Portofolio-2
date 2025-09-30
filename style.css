@@ -1,5 +1,6 @@
 body {
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth; /* smooth scroll bawaan */
 }
 
 /* Navbar */
@@ -12,20 +13,17 @@ body {
   top: 0;
   z-index: 10;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* navbar ke tengah */
 }
 .nav-link {
-  margin-left: 1.5rem;
+  margin: 0 1.5rem;
   color: #4b5563;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 .nav-link:hover {
   color: #2563eb;
-}
-.logo {
-  font-weight: 700;
-  font-size: 1.25rem;
+  transform: scale(1.1);
 }
 
 /* Hero */
@@ -70,6 +68,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 /* Cards */
@@ -78,6 +77,11 @@ body {
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 .card-title {
   font-size: 1.25rem;
@@ -87,9 +91,11 @@ body {
 .link {
   color: #2563eb;
   font-weight: 500;
+  transition: color 0.2s;
 }
 .link:hover {
   text-decoration: underline;
+  color: #1e40af;
 }
 
 /* Button */
@@ -99,10 +105,11 @@ body {
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   font-weight: 500;
-  transition: background 0.2s;
+  transition: transform 0.3s ease, background 0.2s;
 }
 .btn:hover {
   background: #1e40af;
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -112,4 +119,23 @@ body {
   text-align: center;
   padding: 1.5rem;
   margin-top: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+.animate-fade-up {
+  animation: fadeIn 1s ease forwards;
+}
+.animate-bounce-slow {
+  animation: bounceSlow 3s infinite;
 }
