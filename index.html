@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nawaf Achdan Fairil - DevOps & Cloud Engineer Portfolio</title>
+  <span id="typing-text">student at the State Polytechnic of indramayu</span>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,9 +14,8 @@
 <body class="font-inter bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-sm py-4 px-6 md:px-12 flex justify-between items-center fixed w-full z-10">
-    <div class="text-2xl font-bold">Nawaf</div>
-    <div class="hidden md:flex space-x-6">
+  <nav class="navbar">
+    <div class="nav-links">
       <a href="#home" class="nav-link">Home</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#projects" class="nav-link">Projects</a>
@@ -23,29 +24,29 @@
   </nav>
 
   <!-- Home -->
-  <section id="home" class="min-h-screen flex items-center justify-center bg-gray-100 pt-16 px-6">
-    <div class="text-center max-w-3xl">
-      <img src="https://i.imgur.com/BZc4CPc.jpeg" alt="Profile" class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg border-4 border-blue-500 mb-6">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">DevOps & Cloud Engineer</h1>
-      <p class="text-lg text-gray-700">Hi, I’m Nawaf. Passionate about automating infrastructure, building CI/CD pipelines, and deploying scalable apps to the cloud.</p>
+  <section id="home" class="hero">
+    <div class="hero-content animate-fade-in">
+      <img src="https://i.imgur.com/BZc4CPc.jpeg" alt="Profile" class="profile-img animate-bounce-slow">
+      <h1 class="hero-title">DevOps & Cloud Engineer</h1>
+      <p class="hero-subtitle">Hi, I’m Nawaf. Passionate about automating infrastructure, building CI/CD pipelines, and deploying scalable apps to the cloud.</p>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-16 px-6 bg-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Skills</h2>
+  <section id="skills" class="section bg-white">
+    <div class="section-container">
+      <h2 class="section-title">Skills</h2>
       <div class="grid md:grid-cols-3 gap-6 text-left">
-        <div class="p-6 bg-gray-50 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Cloud Platforms</h3>
+        <div class="card animate-fade-up">
+          <h3 class="card-title">Cloud Platforms</h3>
           <p>AWS, Google Cloud, Azure</p>
         </div>
-        <div class="p-6 bg-gray-50 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">DevOps Tools</h3>
+        <div class="card animate-fade-up">
+          <h3 class="card-title">DevOps Tools</h3>
           <p>Docker, Kubernetes, GitHub Actions, Jenkins, GitLab CI</p>
         </div>
-        <div class="p-6 bg-gray-50 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Infra & Monitoring</h3>
+        <div class="card animate-fade-up">
+          <h3 class="card-title">Infra & Monitoring</h3>
           <p>Terraform, Ansible, Prometheus, Grafana</p>
         </div>
       </div>
@@ -53,51 +54,49 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-16 px-6 bg-gray-100">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Projects</h2>
+  <section id="projects" class="section bg-gray-100">
+    <div class="section-container">
+      <h2 class="section-title">Projects</h2>
       <div class="grid md:grid-cols-2 gap-6 text-left">
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">CI/CD Pipeline</h3>
+        <div class="card animate-fade-up">
+          <h3 class="card-title">CI/CD Pipeline</h3>
           <p>Automated deployment of Node.js app using GitHub Actions → Docker Hub → Cloud VM.</p>
-          <a href="#" class="text-blue-500 underline">View on GitHub</a>
+          <a href="#" class="link">View on GitHub</a>
         </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Kubernetes Deployment</h3>
+        <div class="card animate-fade-up">
+          <h3 class="card-title">Kubernetes Deployment</h3>
           <p>Deployed microservice app on Minikube with YAML manifests for pods, services, and ingress.</p>
-          <a href="#" class="text-blue-500 underline">View on GitHub</a>
+          <a href="#" class="link">View on GitHub</a>
         </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Terraform Infra</h3>
+        <div class="card animate-fade-up">
+          <h3 class="card-title">Terraform Infra</h3>
           <p>Provisioned AWS EC2 and S3 bucket using Terraform with reusable modules.</p>
-          <a href="#" class="text-blue-500 underline">View on GitHub</a>
+          <a href="#" class="link">View on GitHub</a>
         </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Monitoring Setup</h3>
+        <div class="card animate-fade-up">
+          <h3 class="card-title">Monitoring Setup</h3>
           <p>Built monitoring stack with Prometheus + Grafana for Docker containers.</p>
-          <a href="#" class="text-blue-500 underline">View on GitHub</a>
+          <a href="#" class="link">View on GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 px-6 bg-white">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+  <section id="contact" class="section bg-white">
+    <div class="section-container text-center">
+      <h2 class="section-title">Contact</h2>
       <p class="mb-6 text-gray-700">Let’s collaborate or talk about opportunities!</p>
-      <a href="mailto:nawafachdanfairil@gmail.com" class="px-6 py-3 rounded-full bg-blue-500 text-white font-medium shadow hover:bg-blue-600 transition">Email Me</a>
+      <a href="mailto:nawafachdanfairil@gmail.com" class="btn">Email Me</a>
       <div class="mt-4 text-gray-600">GitHub • LinkedIn • Medium</div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+  <footer class="footer">
     <p>&copy; <span id="year"></span> Nawaf Achdan Fairil. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
