@@ -1,15 +1,16 @@
-// Set current year in footer
-document.getElementById("year").textContent = new Date().getFullYear();
+// Simple fade-in animation when sections appear
+const sections = document.querySelectorAll("section");
 
-// Tambahin delay animasi buat card pas scroll
-const animatedElements = document.querySelectorAll(".animate-fade-up");
-const observer = new IntersectionObserver(entries => {
+const options = { threshold: 0.3 };
+const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.animationDelay = "0.2s";
       entry.target.classList.add("visible");
     }
   });
-}, { threshold: 0.2 });
+}, options);
 
-animatedElements.forEach(el => observer.observe(el));
+sections.forEach(section => {
+  section.classList.add("hidden");
+  observer.observe(section);
+});
