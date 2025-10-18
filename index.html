@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nawaf Achdan Fairil - DevOps & Cloud Engineer Portfolio</title>
-  <span id="typing-text">student at the State Polytechnic of indramayu</span>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nawaf Achdan Fairil — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="font-inter bg-gray-50 text-gray-800 flex flex-col min-h-screen">
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-links">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
+<body>
+  <nav class="side-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Home -->
-  <section id="home" class="hero">
-    <div class="hero-content animate-fade-in">
-      <img src="https://i.imgur.com/BZc4CPc.jpeg" alt="Profile" class="profile-img animate-bounce-slow">
-      <h1 class="hero-title">DevOps & Cloud Engineer</h1>
-      <p class="hero-subtitle">Hi, I’m Nawaf. Passionate about automating infrastructure, building CI/CD pipelines, and deploying scalable apps to the cloud.</p>
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <div class="content">
+      <h1>Nawaf Achdan Fairil</h1>
+      <p class="subtitle">Software Engineering Student</p>
+      <p>Student ID: 2505091</p>
+      <img src="foto-nawaf.jpg" alt="Nawaf Photo" class="avatar" />
+      <a href="#about" class="btn">About Me ↓</a>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section bg-white">
-    <div class="section-container">
-      <h2 class="section-title">Skills</h2>
-      <div class="grid md:grid-cols-3 gap-6 text-left">
-        <div class="card animate-fade-up">
-          <h3 class="card-title">Cloud Platforms</h3>
-          <p>AWS, Google Cloud, Azure</p>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="content">
+      <h2>About Me</h2>
+      <p>
+        I’m a Software Engineering student at Politeknik Negeri Indramayu.  
+        I’m passionate about learning technology, web development, and understanding 
+        how systems work behind the scenes.  
+      </p>
+      <ul>
+        <li>Experience assembling and servicing PCs during internship</li>
+        <li>Strong interest in AI, automation, and cloud fundamentals</li>
+        <li>Open to learning and exploring new technologies</li>
+      </ul>
+      <a href="#projects" class="btn">View My Projects ↓</a>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="content">
+      <h2>Projects</h2>
+
+      <article class="card">
+        <h3>Portfolio Website (Built with AI Assistance)</h3>
+        <p>
+          Developed my personal portfolio website with the help of AI tools 
+          to learn about HTML, CSS, and JavaScript structures. 
+          Through this project, I understood how web components work together 
+          to build an interactive and responsive site.
+        </p>
+      </article>
+
+      <a href="#certificates" class="btn">Certificates ↓</a>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates">
+    <div class="content">
+      <h2>Certificates</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="bonet.jpg" alt="BONET Certificate" />
+          <p><strong>BONET</strong> — Computer & Network Engineering</p>
         </div>
-        <div class="card animate-fade-up">
-          <h3 class="card-title">DevOps Tools</h3>
-          <p>Docker, Kubernetes, GitHub Actions, Jenkins, GitLab CI</p>
+        <div class="cert-card">
+          <img src="prakerin.jpg" alt="Prakerin Certificate" />
+          <p><strong>Prakerin</strong> — Industrial Work Practice</p>
         </div>
-        <div class="card animate-fade-up">
-          <h3 class="card-title">Infra & Monitoring</h3>
-          <p>Terraform, Ansible, Prometheus, Grafana</p>
+        <div class="cert-card">
+          <img src="ldks.jpg" alt="LDKS Certificate" />
+          <p><strong>LDKS</strong> — Leadership Training</p>
+        </div>
+        <div class="cert-card">
+          <img src="itcast.jpg" alt="IT CAST Certificate" />
+          <p><strong>IT CAST</strong> — Participation in IT Event</p>
+        </div>
+        <div class="cert-card">
+          <img src="idcamp.jpg" alt="IDCamp Certificate" />
+          <p><strong>IDCamp x Dicoding</strong> — AI Fundamentals</p>
         </div>
       </div>
+      <a href="#reflection" class="btn">Reflection ↓</a>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section bg-gray-100">
-    <div class="section-container">
-      <h2 class="section-title">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-left">
-        <div class="card animate-fade-up">
-          <h3 class="card-title">CI/CD Pipeline</h3>
-          <p>Automated deployment of Node.js app using GitHub Actions → Docker Hub → Cloud VM.</p>
-          <a href="#" class="link">View on GitHub</a>
-        </div>
-        <div class="card animate-fade-up">
-          <h3 class="card-title">Kubernetes Deployment</h3>
-          <p>Deployed microservice app on Minikube with YAML manifests for pods, services, and ingress.</p>
-          <a href="#" class="link">View on GitHub</a>
-        </div>
-        <div class="card animate-fade-up">
-          <h3 class="card-title">Terraform Infra</h3>
-          <p>Provisioned AWS EC2 and S3 bucket using Terraform with reusable modules.</p>
-          <a href="#" class="link">View on GitHub</a>
-        </div>
-        <div class="card animate-fade-up">
-          <h3 class="card-title">Monitoring Setup</h3>
-          <p>Built monitoring stack with Prometheus + Grafana for Docker containers.</p>
-          <a href="#" class="link">View on GitHub</a>
-        </div>
-      </div>
+  <!-- ===== REFLECTION ===== -->
+  <section id="reflection">
+    <div class="content">
+      <h2>Reflection</h2>
+      <p>
+        Building this portfolio taught me how each element of a website 
+        connects together — structure, style, and interaction.  
+        I also realized how AI tools can accelerate learning when used responsibly.  
+        This experience motivated me to keep improving my technical and creative skills.
+      </p>
+      <a href="#contact" class="btn">Contact ↓</a>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section bg-white">
-    <div class="section-container text-center">
-      <h2 class="section-title">Contact</h2>
-      <p class="mb-6 text-gray-700">Let’s collaborate or talk about opportunities!</p>
-      <a href="mailto:nawafachdanfairil@gmail.com" class="btn">Email Me</a>
-      <div class="mt-4 text-gray-600">GitHub • LinkedIn • Medium</div>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="content">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:nawaf@example.com">nawaf@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/nawafachdanfairil" target="_blank">nawafachdanfairil</a></p>
+      <p>Location: Indramayu, Indonesia</p>
+      <a href="#home" class="btn">↑ Back to Top</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Nawaf Achdan Fairil. All rights reserved.</p>
-  </footer>
-
-  <script src="assets/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
